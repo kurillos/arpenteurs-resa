@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription aux Tables de Jeux de Rôle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .table {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .closed {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        button {
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inscription aux Tables de Jeux de Rôle</h1>
+
+    <form id="inscriptionForm">
+        <label for="name">Nom :</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <h2>Tables Disponibles</h2>
+        <div id="tablesContainer">
+            <!-- Les tables seront générées ici par JavaScript -->
+        </div>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
